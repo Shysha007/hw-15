@@ -1,13 +1,13 @@
-function Math(arr) {
+function math(arr) {
     const exampleArr = [];
-    if (arr.length === 0) return alert (`Пустой массив`);
+    if (arr.length === 0) return `Пустой массив`;
     for (let i = 0; i < arr.length; i++) {
         if ( arr[i] > 0) {
             exampleArr.push(arr[i]);
         }
     }
-    return alert(exampleArr.length === 0 ? null : exampleArr);
+    return exampleArr.length === 0 ? null : exampleArr;
 }
-Math([1, 2, 3, -1, -2, -3]);
-Math([]);
-Math([-1, -2, -3]);
+alert(math([1, 2, 3, -1, -2, -3]));
+alert(math([]));
+alert(math([-1,-3,-2]))
